@@ -1,7 +1,13 @@
 <html>
 <body>
 <body bgcolor="#E6E6FA"> <font face="Trebuchet MS" color="black">
-<head> <title> test portfolio </title> </head>
+<head>
+<title> test portfolio </title>
+
+<link href="style.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="jsfile.js"></script>
+
+</head>
 
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -12,20 +18,22 @@
 
 <body class="#E6E6FA">
 
-<!-- Navigation bar with social media icons -->
-<div class="w3-bar w3-black w3-hide-small">
-  <a href="https://www.facebook.com/irene.beer.5" class="w3-bar-item w3-button"><i class="fa fa-facebook-official"></i></a>
+<div class="navbar">
+  <div class="w3-bar w3-black w3-hide-small">
   <a href="https://www.instagram.com/arwkuma/" class="w3-bar-item w3-button"><i class="fa fa-instagram"></i></a>
   <a href="https://www.linkedin.com/in/annemaria-beer-679135105/" class="w3-bar-item w3-button"><i class="fa fa-linkedin"></i></a>
+        <div class="w3-center">     <a href="#about_me" </div><i class="fa fa-arrow-down w3-margin-right"></i>About me</a>
+                                    <a href="#casus_1" </div><i class="fa fa-arrow-down w3-margin-right"></i>Logo design Erkenning</a>
+                                    <a href="#casus_2" </div><i class="fa fa-arrow-down w3-margin-right"></i>Project Woonstad</a>
+                                    <a href="#casus_3" </div><i class="fa fa-arrow-down w3-margin-right"></i>Project NRC</a>
+        </div>
+  </div>
 </div>
 
-<!-- w3-content defines a container for fixed size centered content,
-and is wrapped around the whole page content, except for the footer in this example -->
 <div class="w3-content" style="max-width:1600px">
 
   <header class="w3-container w3-center w3-padding-48 w3-white">
-    <h1 class="w3-xxxlarge"><b>COMMUNICATION AND MULTIMEDIADESIGN</b></h1>
-        <a href="#about_me" </div><i class="fa fa-arrow-down w3-margin-right"></i>About me</a>
+    <h1 class="w3-xxxlarge"><b>UX researcher & Interaction designer</b></h1>
   </header>
 
   <header class="w3-display-container w3-wide" id="home">
@@ -36,31 +44,32 @@ and is wrapped around the whole page content, except for the footer in this exam
     </div>
   </header>
 
-  <!-- Grid -->
   <div class="w3-row w3-padding w3-border">
 
-    <!-- Blog entries -->
     <div class="w3-col l8 s12">
 
-      <!-- Blog entry -->
       <div class="w3-container w3-white w3-margin w3-padding-large">
         <div class="w3-center">
           <h3 id=about_me>About me</h3>
         </div>
 
-        <p> Ik studeer Communicatie & Multimediadesign en ik houd mij vooral bezig met “Interaction Design” & "UX researcher".
-          Tijdens mijn studie ben ik voornamelijk bezig met uitdagende projecten waarbij ik ga onderzoeken, ontwerpen en veel reflecteren.<br />
+        <p>Ik studeer Communicatie & Multimedia design en ik houd mij vooral bezig met “Interaction Design” & "UX researcher".
+          Tijdens mijn studie ben ik voornamelijk bezig met uitdagende projecten waarbij ik ga onderzoeken, ontwerpen en veel reflecteren.<span id="dots">...</span><span id="more"> <br />
+          <br />
+          Ik ben een CMD'er die leergierig is omdat ik altijd open sta om andere inzichten te bestuderen. <br />
+          Als ik een fout maak, zie ik het als een leermoment. <br />
+          Ik ben een flexibel persoon omdat ik in veel of weinig tijd een compleet product kan leveren. <br />
+          Ik ben een doorzetter omdat ik hoog of laag graag mijn projecten af wil krijgen en ik zal ervoor zorgen dat ik zoveel mogelijk mensen kan helpen. <br />
+          Vaak kan je mij zien tussen de mensen omdat ik graag wil helpen. <br />
+          Ik wil graag teruggeven aan de mensen in nood of als ze iets willen verbeteren. <br />
+          Ik sta altijd klaar en ik geef graag mensen plezier want dat geeft mij een plezier. <br />
+          <br />
+          Naast mijn studie ben ik graag bezig zoals lezen, tekenen of speel ik keyboard.<br />
+          Ik maak graag foto’s en geniet ik van een kopje thee als ik van mijn dag mag genieten. <br />
+          Ik houd ook wel van geintjes en ben ik ook soms buiten om mijn vrienden te zien.
+        </span></p>
 
-        <p>Ik ben een CMD'er die leergierig is omdat ik altijd open sta om andere inzichten te bestuderen.<br />
-        Als ik een fout maak, zie ik het als een leermoment. <br />
-        Ik ben een flexibel persoon omdat ik in veel of weinig tijd een compleet product kan leveren.<br />
-        Ik ben een doorzetter omdat ik hoog of laag graag mijn projecten af wil krijgen en ik zal ervoor zorgen dat ik zoveel mogelijk mensen kan helpen.<br />
-        Vaak kan je mij zien tussen de mensen omdat ik graag wil helpen.<br />
-        Ik wil graag teruggeven aan de mensen in nood of als ze iets willen verbeteren.<br />
-        Ik sta altijd klaar en ik geef graag mensen plezier want dat geeft mij een plezier.</p>
-
-        <p>Naast mijn studie ben ik graag bezig zoals lezen, tekenen of speel ik keyboard. Ik maak graag foto’s en geniet ik van een kopje thee als ik van mijn dag mag genieten. Ik houd ook wel van geintjes en ben ik ook soms buiten om mijn vrienden te zien.
-        </p>
+        <button onclick="myFunction()" id="myBtn">Read more</button>
 
               <div class="w3-col l10 m9">
 
@@ -70,90 +79,57 @@ and is wrapped around the whole page content, except for the footer in this exam
       </div>
       <hr>
 
-
-      <!-- Blog entry -->
       <div class="w3-container w3-white w3-margin w3-padding-large">
+
         <div class="w3-center">
-          <h3>TITLE HEADING</h3>
-          <h5>Title description, <span class="w3-opacity">April 7, 2016</span></h5>
+          <h3 id=casus_1>Erkenning</h3>
+          <h5>Project logo design, <span class="w3-opacity">9 juli, 2018</span></h5>
         </div>
 
         <div class="w3-justify">
-          <img src="/w3images/runway.jpg" alt="Runway" style="width:100%" class="w3-padding-16">
-          <p><strong>Dont miss!</strong> The runway in New York City this weekend is gonna be legendary!</p>
-          <p>Some text about this blog entry. Fashion fashion and mauris neque quam, fermentum ut nisl vitae, convallis maximus nisl. Sed mattis nunc id lorem euismod placerat. Vivamus porttitor magna enim, ac accumsan tortor cursus at. Phasellus sed ultricies
-            mi non congue ullam corper. Praesent tincidunt sedtellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
-          <p class="w3-left"><button class="w3-button w3-white w3-border" onclick="likeFunction(this)"><b><i class="fa fa-thumbs-up"></i> Like</b></button></p>
-          <p class="w3-right"><button class="w3-button w3-black" onclick="myFunction('demo3')"><b>Replies  </b> <span class="w3-tag w3-white">3</span></button></p>
+        <div class="w3-center"> <img src="images/casus_erkenning.jpg" alt="Erkenning" title="Project Erkenning" class="responsive" /> </div>
+          <p><strong>Ik heb voor het bedrijf Erkenning een logo ontworpen.</strong> <br />
+          De dame van het eenpersoon bedrijf wou graag een logo dat stoer is, ze houdt van sterren maar ze wil ook dat het bij het bedrijfsnaam past. Ik heb voor haar drie schetsen gemaakt dat op verschillende manieren “erkenning” uitstraalt dat past bij haar smaak. Zelfs heb ik gedacht om een ster te pakken dat uit het wapen van haar woonplaats omdat ze trots is waarvan ze vandaan komt. Ze heeft voor de derde schets gekozen en ik heb het uitgewerkt met een dikker lettertype om het stoerder uit te laten zien.</p>
+
           <p class="w3-clear"></p>
+        </div>
 
-          <!-- Example of comment field -->
-          <div id="demo3" style="display:none">
-            <hr>
-            <div class="w3-row w3-margin-bottom">
-              <div class="w3-col l2 m3">
-                <img src="/w3images/girl_mountain.jpg" style="width:90px;">
-              </div>
-              <div class="w3-col l10 m9">
-                <h4>Jane <span class="w3-opacity w3-medium">April 10, 2015, 7:22 PM</span></h4>
-                <p>That was a great runway show! Thanks for everything.</p>
-              </div>
-            </div>
-            <div class="w3-row w3-margin-bottom">
-              <div class="w3-col l2 m3">
-                <img src="/w3images/boy.jpg" style="width:90px;">
-              </div>
-              <div class="w3-col l10 m9">
-                <h4>John <span class="w3-opacity w3-medium">April 8, 2015, 10:32 PM</span></h4>
-                <p>Keep up the GREAT work! I am cheering for you!! Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
-              </div>
-            </div>
-            <div class="w3-row w3-margin-bottom">
-              <div class="w3-col l2 m3">
-                <img src="/w3images/girl_hood.jpg" style="width:90px;">
-              </div>
-              <div class="w3-col l10 m9">
-                <h4>Anja <span class="w3-opacity w3-medium">April 7, 2015, 9:12 PM</span></h4>
-                <p>Cant wait for the runway to start!</p>
-              </div>
-            </div>
+
+          <div class="w3-center">
+            <h3 id=casus_2>Woonstad Rotterdam</h3>
+            <h5>Project klanttevredenheid, <span class="w3-opacity">1 september, 2018</span></h5>
           </div>
-        </div>
-      </div>
 
-    <!-- About/Information menu -->
-    <div class="w3-col l4">
+          <div class="w3-justify">
+          <div class="w3-center"> <img src="images/collage_casus_2.jpg" alt="Woonstad Rotterdam" class="responsive" title="Project Woonstad Rotterdam" class="w3-padding-16" /> </div>
+            <p><strong>Ik, als team captain, ben met mijn team achterna gegaan wat onze opdrachtgever Woonstad Rotterdam graag wilt hebben.</strong> <br />
+            Ze willen hun klanttevredenheid omhoog halen. We gingen onderzoeken waar er nog tevredenheid in kon verhogen en het ging vooral om de communicatie tussen bewoner en Woonstad Rotterdam. Ik ben meegelopen met een werknemer van Woonstad Rotterdam die de kwaliteit van de gangpaden controleren en of als veilig is. Na het onderzoeken is de conclusie dat er veel klachten waren die wel genoteerd worden maar niet doorgevoerd worden. Wij zijn op het idee gekomen om klachten die snel geholpen kunnen worden, het zelf kunnen verbeteren of dat de buren mee kunnen helpen. Na schetsen en testen kwam er een deurbel uit waar omwonenden kunnen zien dat iemand een probleem heeft, inclusief werknemers van Woonstad Rotterdam. Door het licht rondom de deurbel was het duidelijker of iemand hulp nodig had.</p>
 
-      <!-- Posts -->
-      <div class="w3-white w3-margin">
-        <div class="w3-container w3-padding w3-black">
+            <p class="w3-clear"></p>
+          </div>
 
+          <div class="w3-center">
+            <h3 id=casus_3>NRC</h3>
+            <h5>Project Algoritme (ongoing), <span class="w3-opacity">1 februari, 2019</span></h5>
+          </div>
 
+          <div class="w3-justify">
+          <div class="w3-center"> <img src="images/collage_casus_3.jpg" alt="NRC" class="responsive" title="Project NRC" class="w3-padding-16" /> </div>
+            <p><strong>NRC is nog steeds mijn huidige opdrachtgever.</strong> <br />
+            NRC wilt werken met algoritmes zodat hun content beter aansluit de behoeftes van lezers. Ik heb onderzoek gedaan naar hun strategie en mensen geïnterviewd met het team waar ik in zit om te kijken wat het NRC al heeft gedaan en wat ze uitstralen + de behoeftes van lezers en zo potentiële NRC lezers. Met deze uitkomsten ben ik met het team gaan ideevormen, een hele dag creatieve technieken gedaan met een strak schema. Het kwam zo mooi uit omdat ik “out of the box” ideeën eruit kon halen.</p>
 
-          </p>
-        </div>
+            <p class="w3-clear"></p>
+          </div>
+
       </div>
       <hr>
 
-      <!-- Inspiration -->
-      <div class="w3-white w3-margin">
-        <div class="w3-container w3-padding w3-black">
-
-        </div>
-      </div>
-
-    <!-- END About/Intro Menu -->
     </div>
-
-  <!-- END GRID -->
   </div>
-
-<!-- END w3-content -->
 </div>
 
 </div>
 
-<!-- Footer -->
 <footer class="w3-container w3-dark-grey" style="padding:32px">
   <a href="#" class="w3-button w3-black w3-padding-large w3-margin-bottom"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
 
