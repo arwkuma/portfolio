@@ -13,3 +13,7 @@ function myFunction() {
     moreText.style.display = "inline";
   }
 }
+
+document.querySelector('#face').onclick = function() {
+    alert('Ouch! Stop poking me!');
+}
