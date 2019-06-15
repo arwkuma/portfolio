@@ -1,146 +1,224 @@
+<!DOCTYPE html>
 <html>
-<body>
-<body bgcolor="#E6E6FA"> <font face="Trebuchet MS" color="black">
-<head>
-<title>Portfolio van Irene</title>
-
-<link href="style.css" rel="stylesheet" type="text/css">
-<script type="text/javascript" src="jsfile.js"></script>
-
-</head>
-
+<title>Portfolio Irene Beer</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open Sans">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="style.css" type="text/css">
+<script type="text/javascript" src="jsfile.js"></script>
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Poppins", sans-serif}
+</style>
+<body class="w3-light-grey w3-content" style="max-width:1600px">
 
-<body class="#E6E6FA">
-
-<div class="navbar">
-  <div class="w3-bar w3-black w3-hide-small">
-  <a href="https://www.instagram.com/arwkuma/" class="w3-bar-item w3-button"><i class="fa fa-instagram"></i></a>
-  <a href="https://www.linkedin.com/in/annemaria-beer-679135105/" class="w3-bar-item w3-button"><i class="fa fa-linkedin"></i></a>
-        <div class="w3-center">     <a href="#about_me" </div><i class="fa fa-arrow-down w3-margin-right"></i>About me</a>
-                                    <a href="#casus_1" </div><i class="fa fa-arrow-down w3-margin-right"></i>Logo design Erkenning</a>
-                                    <a href="#casus_2" </div><i class="fa fa-arrow-down w3-margin-right"></i>Project Woonstad</a>
-                                    <a href="#casus_3" </div><i class="fa fa-arrow-down w3-margin-right"></i>Project NRC</a>
-                                    <a href="#casus_4" </div><i class="fa fa-arrow-down w3-margin-right"></i>Project Hackastory</a>
-        </div>
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-collapse w3-white w3-animate-left" style="z-index:3;width:300px;" id="mySidebar"><br>
+  <div class="w3-container">
+    <a href="#" onclick="w3_close()" class="w3-hide-large w3-right w3-jumbo w3-padding w3-hover-grey" title="close menu">
+      <i class="fa fa-remove"></i>
+    </a>
+    <img src="images\face_icon.jpg" id=face alt="A headshot of my face" title="This is me, myself and Irene." style="width:45%;" class="w3-round"><br><br>
+    <h4><b>PORTFOLIO</b></h4>
+    <p class="w3-text-grey">Irene Beer</p>
   </div>
-</div>
+  <div class="w3-bar-block">
+    <a href="#portfolio" onclick="w3_close()" class="w3-bar-item w3-button w3-padding text-dark-purple"><i class="fa fa-th-large fa-fw w3-margin-right"></i>PORTFOLIO</a>
+    <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-user fa-fw w3-margin-right text-dark-purple"></i>ABOUT</a>
+    <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-envelope fa-fw w3-margin-right text-dark-purple"></i>CONTACT</a>
+  </div>
+  <div class="w3-panel w3-large">
 
-<div class="w3-content" style="max-width:1600px">
+    <a href="https://www.linkedin.com/in/annemaria-beer-679135105/" target="_blank"<i class="fa fa-linkedin w3-hover-opacity"></i> </a>
+    <a href="https://www.instagram.com/arwkuma/" target="_blank"<i class="fa fa-instagram w3-hover-opacity"></i></a>
 
-  <header class="w3-container w3-center w3-padding-48 w3-white">
-    <h1 class="w3-xxxlarge"><b>UX researcher & Interaction designer</b></h1>
-  </header>
+  </div>
+</nav>
 
-  <header class="w3-display-container w3-wide" id="home">
-    <img class="w3-image" <img src="images/my face.jpeg" id=face alt="A headshot of my face" title="This is me, myself and Irene." width="1600" height="1066" />
-    <div class="w3-display-left w3-padding-large">
-      <h1 class="w3-text-white">Irene Beer</h1>
-      <h1 class="w3-jumbo w3-text-white w3-hide-small"><b>PORTFOLIO</b></h1>
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:300px">
+
+  <!-- Header -->
+  <header id="portfolio">
+    <a href="#"><img src="images\face_icon.jpg" id=face alt="A headshot of my face" title="This is me, myself and Irene." style="width:65px;" class="w3-circle w3-right w3-margin w3-hide-large w3-hover-opacity"></a>
+    <span class="w3-button w3-hide-large w3-xxlarge w3-hover-text-grey" onclick="w3_open()"><i class="fa fa-bars"></i></span>
+    <div class="w3-container">
+
+    <!-- Banner -->
+
+    <!-- w3-content defines a container for fixed size centered content,
+    and is wrapped around the whole page content, except for the footer in this example -->
+    <div class="w3-content" style="max-width:1600px">
+
+      <!-- Image header -->
+      <header class="w3-display-container w3-wide">
+      <img src="images\banner.jpg" style="width:100%" >
+        <div class="w3-display-left w3-padding-large">
+          <h1 class="w3-xxlarge w3-text-white"><b>My Portfolio</b></h1>
+        </div>
+
+      <div class="w3-section w3-bottombar w3-padding-16">
+
+      </div>
     </div>
   </header>
 
-  <div class="w3-row w3-padding w3-border">
+  <span class="w3-margin-right"> <div class="w3-container"> <h2><b>School projects</b></h2>
+    </div>
+  </span>
 
-    <div class="w3-col l8 s12">
-
-      <div class="w3-container w3-white w3-margin w3-padding-large">
-        <div class="w3-center">
-          <h3 id=about_me>About me</h3>
-        </div>
-
-        <p>
-            Ik ben Irene Beer, ik studeer Communication & Multimedia Design in Rotterdam om mij te ontwikkelen als UX-researcher met interesse in interaction design. Op deze opleiding werk ik vrijwel altijd in een team. Binnen deze samenwerking zorg ik vooral voor alles wat met onderzoek en design te maken heeft. Ik wil de wensen van de opdrachtgever kunnen vertalen naar een mooi ontwerp wat ook goed past bij de gebruiker. Ik ben van nature heel nieuwsgierig en ik sta open voor nieuwe ontwikkelingen en ideeën. <span id="dots">...</span><span id="more"> <br />
-            <br />
-            Als ik een fout maak, zie ik het als een leermoment. Ik ben een flexibel persoon omdat ik me kan aanpassen aan een werksituatie en kan ik onder druk werken (of niet). Zo ben ik ook een doorzetter omdat ik hoog of laag graag mijn projecten af wil krijgen en ik zal ervoor zorgen dat ik zoveel mogelijk mensen kan helpen. Vaak kan je mij zien tussen de mensen omdat ik graag wil helpen. Ik wil graag teruggeven aan de mensen in nood of als ze iets willen verbeteren. Ik sta altijd klaar en ik geef graag mensen plezier want dat geeft mij een plezier. <br />
-            <br />
-            Naast mijn studie houd ik mij veel bezig met opdoen van informatie, zo lees ik 2 boeken per week om kennis op te doen van coderen tot gedrag bij mensen. Ik maak graag foto’s en geniet ik van een kopje thee als ik van mijn dag mag genieten. Ik houd ook wel van geintjes en ben ik ook soms buiten om mijn vrienden te zien.
-
-        </span></p>
-
-        <button onclick="myFunction()" id="myBtn">Read more</button>
-
-              <div class="w3-col l10 m9">
-
-              </div>
-          </div>
-        </div>
+  <!-- First Photo Grid-->
+  <div class="w3-row-padding">
+    <div class="w3-third w3-container w3-margin-bottom">
+      <img src="images/casus_stal.jpg" alt="Stal" style="width:100%" class="w3-hover-opacity">
+      <div class="w3-container w3-white">
+        <p><b>Stal</b></p>
+        <p>PAARD te Den Haag wilt bezoekers vaker terug laten keren voor een concert in PAARD doormiddel van een online element. Via de opdrachtgever Fabrique heeft team Pinda een extensie bedacht voor de website van PAARD.</p>
       </div>
-      <hr>
-
-      <div class="w3-container w3-white w3-margin w3-padding-large">
-
-        <div class="w3-center">
-          <h2>Projects</h2>
-
-        <div class="w3-center">
-          <h3 id=casus_1>Erkenning</h3>
-          <h5>Project logo design, <span class="w3-opacity">9 juli, 2018</span></h5> <br />
-        </div>
-
-        <div class="w3-justify">
-        <div class="w3-center"> <img src="images/collage_casus_1.jpg" alt="Erkenning" title="Project Erkenning" class="responsive" /> </div>
-
-          <p class="w3-clear"></p>
-        </div>
-
-
-          <div class="w3-center">
-            <h3 id=casus_2>Woonstad Rotterdam</h3>
-            <h5>Project klanttevredenheid, <span class="w3-opacity">1 september, 2018</span></h5> <br />
-          </div>
-
-          <div class="w3-justify">
-          <div class="w3-center"> <img src="images/collage_casus_2.jpg" alt="Woonstad Rotterdam" class="responsive" title="Project Woonstad Rotterdam" class="w3-padding-16" /> </div>
-
-            <p class="w3-clear"></p>
-          </div>
-
-          <div class="w3-center">
-            <h3 id=casus_3>NRC</h3>
-            <h5>Project Algoritme (ongoing), <span class="w3-opacity">1 februari, 2019</span></h5> <br />
-          </div>
-
-          <div class="w3-justify">
-          <div class="w3-center"> <img src="images/collage_casus_3.jpg" alt="NRC" class="responsive" title="Project NRC" class="w3-padding-16" /> </div>
-            <p><strong>NRC is nog steeds mijn huidige opdrachtgever.</strong> <br />
-            NRC wilt werken met algoritmes zodat hun content beter aansluit de behoeftes van lezers. Ik heb onderzoek gedaan naar hun strategie en mensen geïnterviewd met het team waar ik in zit om te kijken wat het NRC al heeft gedaan en wat ze uitstralen + de behoeftes van lezers en zo potentiële NRC lezers. Met deze uitkomsten ben ik met het team gaan ideevormen, een hele dag creatieve technieken gedaan met een strak schema. Het kwam zo mooi uit omdat ik “out of the box” ideeën eruit kon halen.</p>
-
-            <p class="w3-clear"></p>
-          </div>
-
-
-          <div class="w3-center">
-          <h3 id=casus_4>Hackastory</h3>
-                      <h5>Project Hackastory, <span class="w3-opacity">23/24 mei, 2019</span></h5> <br />
-                    </div>
-
-                    <div class="w3-justify">
-                    <div class="w3-center"> <img src="images/collage_casus_4.jpg" alt="Hackastory" class="responsive" title="Project Hackastory" class="w3-padding-16" /> </div>
-
-
-                      <p class="w3-clear"></p>
-                    </div>
-
+    </div>
+    <div class="w3-third w3-container w3-margin-bottom">
+      <a href="casus_enlighten.html">
+      <img src="images/casus_enlighten.jpg" alt="Enlighten" style="width:100%" class="w3-hover-opacity"> </a>
+      <div class="w3-container w3-white">
+        <p><b>Enlighten</b></p>
+        <p>Woonstad Rotterdam wilt graag hun klanttevredenheidscijfer omhoog halen. Team Kavel4 heeft de communicatie tussen bewoner en Woonstad Rotterdam aangepakt om zo het klanttevredenheidscijfer omhoog te halen.</p>
       </div>
-      <hr>
-
+    </div>
+    <div class="w3-third w3-container">
+      <img src="images/casus_vandaag_speel_ik.jpg" alt="Vandaag speel ik..." style="width:100%" class="w3-hover-opacity">
+      <div class="w3-container w3-white">
+        <p><b>Vandaag speel ik...</b></p>
+        <p>NRC wilt werken met algoritmes zodat hun content beter aansluit de behoeftes van lezers. Met team GooGoo ben ik aan de lag gegaan waarop hun doelgroep algoritmes willen hebben. Dit project is nog gaande.</p>
+      </div>
     </div>
   </div>
-</div>
-        </p>
-</div>
 
-<footer class="w3-container w3-dark-grey" style="padding:32px">
-  <a href="#" class="w3-button w3-black w3-padding-large w3-margin-bottom"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
-  <h3 class="w3-text-white"> Made with Github, Atom, Hyper & some love, like my work? contact me by mail: arw.beer@gmail.com</h3>
+      <span class="w3-margin-right"> <div class="w3-container"> <h2><b>My own projects</b></h2>
+    </div>
+  </span>
 
-</footer>
+  <!-- Second Photo Grid-->
+
+
+  <div class="w3-row-padding">
+    <div class="w3-third w3-container w3-margin-bottom">
+      <a href="casus_hackastory.html">
+      <img src="images/casus_hackastory.jpg" alt="Hackastory" style="width:100%" class="w3-hover-opacity"> </a>
+      <div class="w3-container w3-white">
+        <p><b>Hackastory</b></p>
+        <p>Met andere studenten van verschillende opleidingen ben ik aan de slag gegaan voor twee creatieve, speelse en energieke dagen om te verkennen hoe sociale robots ons kunnen ondersteunen in de (geestelijke) zorg.</p>
+      </div>
+    </div>
+    <div class="w3-third w3-container w3-margin-bottom">
+      <a href="casus_erkenning.html">
+      <img src="images/casus_erkenning.jpg" alt="Erkenning" style="width:100%" class="w3-hover-opacity"> </a>
+      <div class="w3-container w3-white">
+        <p><b>Erkenning</b></p>
+        <p>Voor het eenpersoonsbedrijf Erkenning heb ik een logo ontworpen. De dame die het bedrijft runt had nog geen logo en wilde graag een logo dat bij haar past en bij de betekenis van haar bedrijf past.</b></p>
+      </div>
+    </div>
+    <div class="w3-third w3-container">
+      <a href="casus_creative_dump.html">
+      <img src="images/casus_creative_dump.jpg" alt="Design dump" style="width:100%" class="w3-hover-opacity"> </a>
+      <div class="w3-container w3-white">
+        <p><b>Creative dump</b></p>
+        <p>Sketches, foto's & overige designs die ik heb gemaakt door de jaren heen. Deze dump bestaat uit oefenmateriaal of kleinere opdrachten. Ook bevat het links naar mijn Adobe Sparkpage & Codepen.io.</b></p>
+      </div>
+    </div>
+  </div>
+    <div class="w3-container">
+      <div class="w3-section w3-bottombar w3-padding-16">
+
+      </div>
+    </div>
+
+  <!-- Images of Me -->
+  <span class="w3-margin-right"> <div class="w3-container" id="about">
+    <h4><b>Even voorstellen</b></h4> <hr>
+    <div class="w3-col m6">
+      <img src="images\about_me.jpg" alt="Me" style="width:100%">
+    </div>
+    <div class="w3-col m6">
+      <img src="images\about_me2.jpg" alt="Myself" style="width:100%">
+    </div>
+  </div>
+
+  <div class="w3-container w3-padding-large" style="margin-bottom:32px">
+    <p>  Mijn naam is Irene Beer, ik studeer Communication & Multimedia Design in Rotterdam om mij te ontwikkelen als UX-researcher met interesse in interaction design. Op deze opleiding werk ik vrijwel altijd in een team. Binnen deze samenwerking zorg ik vooral voor alles wat met onderzoek en design te maken heeft. Ik wil de wensen van de opdrachtgever kunnen vertalen naar een mooi ontwerp wat ook goed past bij de gebruiker.<br /><br />
+      Ik ben een leergierig persoon die zich aan kan passen aan een werksituatie en kan ik onder druk werken (of niet) en zet ik graag door totdat ik mijn doel heb behaald. Mijn doel is dat ik zoveel mogelijk mensen kan helpen. Ik ben niet alleen klassenvertegenwoordiger van mijn opleiding maar ook peercoach voor de eerstejaars van mijn opleiding. Daarnaast heb ik ook vluchtelingenwerk verricht waarbij ik veel connecties heb gemaakt en de kleine dingen heb kunnen doen waardoor er grote veranderingen waren voor de vluchtelingen. Het geeft mij plezier als ik anderen kan helpen en plezier kan geven.<br /><br />
+      Naast mijn vrije tijd duik ik graag in de boeken om altijd op de hoogte te houden van nieuwe ontwikkelingen en ideeën. Ik maak graag foto’s en speel ik keyboard/piano en geniet ik van een kopje thee als ik van mijn dag mag genieten.
+      <br /><br />
+      <h4><b>Doel</b></h4>
+      Waar ik uiteindelijk wil bereiken dat ik niet alleen een UX-researcher/interaction designer ben maar ik ook mee kan draaien met het maken van een prototype. Ik vind het allebei even leuk maar ik wil mezelf ook graag breed in kunnen zetten. Ik wil me dan aan kunnen sluiten bij een stel creatievelingen en visual designers zodat ik met mijn eigen bedrijf verder kan gaan. Ik wil mezelf nog kunnen verbeteren met coderen en vooral in visual design. Visual design is voor mij nog een uitdaging waarop ik nog wil focussen met mijn opleiding. </p>
+      <hr>
+
+    <h4><b>Skills</b></h4>
+    <!-- Progress bars / Skills -->
+    <p>Onderzoeken</p>
+    <div class="w3-grey">
+      <div class="w3-container coral w3-padding w3-center" style="width:85%">85%</div>
+    </div>
+    <p>Ideevormen</p>
+    <div class="w3-grey">
+      <div class="w3-container coral w3-padding w3-center" style="width:75%">75%</div>
+    </div>
+    <p>Prototyping</p>
+    <div class="w3-grey">
+      <div class="w3-container coral w3-padding w3-center" style="width:70%">70%</div>
+    </div>
+    <p>Design</p>
+    <div class="w3-grey">
+      <div class="w3-container coral w3-padding w3-center" style="width:60%">60%</div>
+    </div>
+    <p>HTML & CSS & Javascript</p>
+    <div class="w3-grey">
+      <div class="w3-container coral w3-padding w3-center" style="width:60%">60%</div>
+    </div>
+    <p>
+    </p>
+    <hr>
+
+    <div class="w3-row-padding" style="margin:0 -16px">
+    </div>
+
+  <!-- Contact Section -->
+  <div class="w3-container w3-padding-large w3-grey">
+    <h4 id="contact"><b>Contact Me</b></h4>
+    <div class="w3-row-padding w3-center w3-padding-24" style="margin:0 -16px">
+      <div class="w3-third w3-dark-grey">
+        <p><i class="fa fa-envelope w3-xxlarge w3-text-light-grey"></i></p>
+        <p>arw.beer@gmail.com</p>
+      </div>
+      <div class="w3-third coral">
+        <p><i class="fa fa-map-marker w3-xxlarge w3-text-light-grey"></i></p>
+        <p>Oud-Beijerland, Nederland</p>
+      </div>
+      <div class="w3-third w3-dark-grey">
+        <p><i class="fa fa-phone w3-xxlarge w3-text-light-grey"></i></p>
+        <p>+31613155729</p>
+      </div>
+    </div>
+    <hr class="w3-opacity">
+
+  </div>
+
+  <!-- Footer -->
+  <footer class="w3-container w3-padding-32 w3-dark-grey">
+  <div class="w3-row-padding">
+    <div class="w3-third">
+      <h3>Made with Github, Atom, Hyper & some love.</h3>
+    </div>
+  </div>
+  </footer>
+
+  <div class="w3-black w3-center w3-padding-24"></div>
+
+<!-- End page content -->
+</div>
 
 </body>
 </html>
