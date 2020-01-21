@@ -5,11 +5,14 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+<link href="https://fonts.googleapis.com/css?family=Work+Sans:700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Poppins:400,700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="style.css" type="text/css">
 <script type="text/javascript" src="jsfile.js"></script>
 <style>
-body,h1,h2,h3,h4,h5,h6 {font-family: "Poppins", sans-serif}
+h1,h2,h3,h4,h5,h6 {font-family: "Poppins:700", sans-serif}
+body {font-family: "Poppins:400", sans-serif}
 </style>
 <body class="w3-white w3-content" style="max-width:1600px">
 
@@ -24,8 +27,8 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Poppins", sans-serif}
     <p class="w3-text-grey">Irene Beer</p>
   </div>
   <div class="w3-bar-block">
-    <a href="#portfolio" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3.text-dark-black"><i class="fa fa-th-large fa-fw w3-margin-right"></i>PORTFOLIO</a>
-    <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-user fa-fw w3-margin-right w3.text-dark-black"></i>ABOUT</a>
+    <a href="#projects" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3.text-dark-black"><i class="fa fa-th-large fa-fw w3-margin-right"></i>PROJECTS</a>
+    <a href="about.html" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-user fa-fw w3-margin-right w3.text-dark-black"></i>ABOUT</a>
     <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-envelope fa-fw w3-margin-right w3.text-dark-black"></i>CONTACT</a>
   </div>
   <div class="w3-panel w3-large">
@@ -43,7 +46,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Poppins", sans-serif}
 <div class="w3-main" style="margin-left:300px">
 
   <!-- Header -->
-  <header id="portfolio">
+  <header>
     <a href="#"><img src="images\face_icon.jpg" id=face alt="A headshot of my face" title="This is me, myself and Irene." style="width:65px;" class="w3-circle w3-right w3-margin w3-hide-large w3-hover-opacity"></a>
     <span class="w3-button w3-hide-large w3-xxlarge w3-hover-text-grey" onclick="w3_open()"><i class="fa fa-bars"></i></span>
     <div class="w3-container">
@@ -55,24 +58,32 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Poppins", sans-serif}
     <div class="w3-content" style="max-width:1600px">
 
       <!-- Image header -->
-      <header class="w3-display-container w3-wide">
+      <header class="w3-display-container w3-wide" style="margin-bottom:64px">
       <img src="images\banner.jpg" style="width:100%" >
         <div class="w3-display-left w3-padding-large">
           <h1 class="w3-xxlarge w3-text-white"><b>My Portfolio</b></h1>
         </div>
 
-      <div class="w3-section w3-bottombar w3-padding-16">
 
-      </div>
     </div>
   </header>
 
-  <span class="w3-margin-right"> <div class="w3-container"> <h2><b>School projects</b></h2>
+  <!-- Images of Me -->
+
+
+
+  <span class="w3-margin-right"> <div class="w3-container">
+
+    <div class="w3-section w3-bottombar w3-padding-16">
+
+    </div>
+
+  <span class="w3-margin-right"> <div class="w3-container"style="margin-bottom:16px" id="projects"> <h2><b>School projects</b></h2>
     </div>
   </span>
 
   <!-- First Photo Grid-->
-  <div class="w3-row-padding">
+  <div class="w3-row-padding" style="margin-bottom:32px">
     <div class="w3-third w3-container w3-margin-bottom">
       <a href="casus_stal.html">
       <img src="images/casus_stal.jpg" alt="Stal" style="width:100%" class="w3-hover-opacity"> </a>
@@ -87,14 +98,14 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Poppins", sans-serif}
     </div>
   </div>
 
-      <span class="w3-margin-right"> <div class="w3-container"> <h2><b>My own projects</b></h2>
+      <span class="w3-margin-right"> <div class="w3-container" style="margin-bottom:16px"> <h2><b>My own projects</b></h2>
     </div>
   </span>
 
   <!-- Second Photo Grid-->
 
 
-  <div class="w3-row-padding">
+  <div class="w3-row-padding" style="margin-bottom:32px">
     <div class="w3-third w3-container w3-margin-bottom">
       <a href="casus_hackastory.html">
       <img src="images/casus_hackastory.jpg" alt="Hackastory" style="width:100%" class="w3-hover-opacity"> </a>
@@ -104,8 +115,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Poppins", sans-serif}
       <img src="images/casus_erkenning.jpg" alt="Erkenning" style="width:100%" class="w3-hover-opacity"> </a>
     </div>
     <div class="w3-third w3-container">
-      <a href="casus_creative_dump.html">
-      <img src="images/casus_creative_dump.jpg" alt="Design dump" style="width:100%" class="w3-hover-opacity"> </a>
+
     </div>
   </div>
     <div class="w3-container">
@@ -116,64 +126,12 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Poppins", sans-serif}
     <br />
 
   <!-- Images of Me -->
-  <span class="w3-margin-right"> <div class="w3-container" id="about">
-    <div class="w3-col m6">
-      <img src="images\about_me.jpg" alt="Me" style="width:100%">
-    </div>
-    <div class="w3-col m6">
-      <img src="images\about_me2.jpg" alt="Myself" style="width:100%">
-    </div>
-  </div>
-
-  <div class="w3-container w3-padding-large" style="margin-bottom:32px">
-
-      <div class="w3-half">
-    <h4><b>Even voorstellen</b></h4>
-    <p>  Mijn naam is Irene, ik studeer Communication & Multimedia Design in Rotterdam om mij te ontwikkelen als UX-researcher met interesse in interaction design. Op deze opleiding werk ik vrijwel altijd in een team waarmee ik mijn skills verder kan te ontwikkelen. Ik ben een leergierig persoon die zich aan kan passen aan een werksituatie en kan ik onder druk werken (of rustig werken) en zet ik graag door totdat ik mijn doel heb bereikt.
-      <br /><br />
-      Mijn doel is dat ik mensen kan helpen want dat doe ik met plezier. Zo heb ik eerstejaars begeleid van CMD en voorgaande opleidingen tot vluchtelingenwerk gedaan. Ik wil het graag anderen helpen en geef ik graag kennis door.
-      <br /><br />
-      In mijn vrije tijd duik ik graag in de boeken om mijzelf altijd op de hoogte te houden van nieuwe ontwikkelingen en ideeën. Daarnaast maak ik graag foto’s, bak ik af en toe, speel ik keyboard/piano en geniet ik van een kopje thee die altijd klaar staat op mijn bureau.
-    </p>
-    </div>
-      <div class="w3-half w3-container">
-      <h4><b>Toekomst</b></h4>
-      <p>
-      Wat ik uiteindelijk wil bereiken is dat ik niet alleen een UX/UI-researcher/interaction designer ben. Ik vind UX/UI design allebei even belangrijk voor mijn ontwikkeling als interaction designer. Ik wil mijzelf nog kunnen verbeteren met coderen en visual design. Met meer kennis in het coderen weet ik of websites en apps realiseerbaar zijn. Daarom zijn de visuals en het coderen van deze website door mijzelf gedaan om zo te laten zien hoe ver ik ben met mijn ontwikkeling. Het leuke van deze website is dat het ook responsive is, probeer het zelf maar!
-      <br /> <br/>
-      Ik wil “out of the box” kunnen denken maar ik wil ook dat het haalbaar is met de technieken die we hebben en technieken die er komen. Daarom ben ik altijd op uit met onderzoeken naar nieuwe methodes en technieken om producten te verbeteren. Ik wil dan later na mijn opleiding met mijn eigen bedrijf beginnen.
-    </p>
-    </div>
-  </div>
-
-  <div class="w3-container w3-padding-large" style="margin-bottom:32px">
-
-    <h4><b>Skills</b></h4>
-    <!-- Progress bars / Skills -->
-    <p>Onderzoeken</p>
-    <div class="w3-grey">
-      <div class="w3-container coral w3-padding w3-center" style="width:85%">85%</div>
-    </div>
-    <p>Ideevormen</p>
-    <div class="w3-grey">
-      <div class="w3-container coral w3-padding w3-center" style="width:75%">75%</div>
-    </div>
-    <p>Prototyping</p>
-    <div class="w3-grey">
-      <div class="w3-container coral w3-padding w3-center" style="width:70%">70%</div>
-    </div>
-    <p>Design</p>
-    <div class="w3-grey">
-      <div class="w3-container coral w3-padding w3-center" style="width:70%">70%</div>
-    </div>
-    <p>HTML & CSS & Javascript</p>
-    <div class="w3-grey">
-      <div class="w3-container coral w3-padding w3-center" style="width:30%">30%</div>
-    </div>
-    <p>
-    </p>
+  <span class="w3-margin-right"> <div class="w3-container" id="skills">
 
   </div>
+
+
+
 
     <div class="w3-row-padding" style="margin:0 -16px">
     </div>
